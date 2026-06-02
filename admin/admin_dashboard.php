@@ -47,7 +47,7 @@ if (isset($_POST['edit_user'])) {
     $email = $_POST['email'];
     $branch_name = $_POST['branch_name'];
     
-    $query = "UPDATE users SET username = '$username', password = '$password', usertype = '$usertype', email = '$email', branch_name = '$branch_name' WHERE user_id = $user_id";
+    $query = "UPDATE users SET username = '$username', password = "YOUR_OWN_API_KEY", usertype = '$usertype', email = '$email', branch_name = '$branch_name' WHERE user_id = $user_id";
     
     if (mysqli_query($conn, $query)) {
         $message = "User updated successfully!";
