@@ -8,7 +8,7 @@ if (isset($_POST['login'])) {
     $password = $_POST['password']; // Remember this is plain text in your case
 
     // Fetch user data based on the provided username and password
-    $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+    $query = "SELECT * FROM users WHERE username = '$username' AND password = "YOUR_OWN_API_KEY"";
     $result = mysqli_query($conn, $query);
     $user = mysqli_fetch_assoc($result);
 
